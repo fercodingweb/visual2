@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+import sys
 
 class Ui_Form(object):
     def setupUi(self, Form):
@@ -24,6 +25,10 @@ class Ui_Form(object):
         self.pushButton_4 = QtWidgets.QPushButton(Form)
         self.pushButton_4.setGeometry(QtCore.QRect(160, 230, 93, 28))
         self.pushButton_4.setObjectName("pushButton_4")
+        # Tambahkan tombol Refresh
+        self.pushButton_refresh = QtWidgets.QPushButton(Form)
+        self.pushButton_refresh.setGeometry(QtCore.QRect(280, 180, 93, 28))
+        self.pushButton_refresh.setObjectName("pushButton_refresh")
         self.labelBilanganpertama = QtWidgets.QLabel(Form)
         self.labelBilanganpertama.setGeometry(QtCore.QRect(10, 40, 131, 16))
         self.labelBilanganpertama.setObjectName("labelBilanganpertama")
@@ -37,19 +42,21 @@ class Ui_Form(object):
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
-        # Tambahkan koneksi tombol ke fungsi operasi
+        # Koneksi tombol ke fungsi operasi
         self.pushButton_3.clicked.connect(self.penjumlahan)
         self.pushButton.clicked.connect(self.pengurangan)
         self.pushButton_2.clicked.connect(self.perkalian)
         self.pushButton_4.clicked.connect(self.pembagian)
+        self.pushButton_refresh.clicked.connect(self.refresh)
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "Form"))
+        Form.setWindowTitle(_translate("Form", "Form Kalkulator"))
         self.pushButton.setText(_translate("Form", "Pengurangan"))
         self.pushButton_2.setText(_translate("Form", "Perkalian"))
         self.pushButton_3.setText(_translate("Form", "Penjumlahan"))
         self.pushButton_4.setText(_translate("Form", "Pembagian"))
+        self.pushButton_refresh.setText(_translate("Form", "Refresh"))
         self.labelBilanganpertama.setText(_translate("Form", "Bilangan Pertama"))
         self.label_2BilanganKedua.setText(_translate("Form", "Bilangan Kedua"))
         self.label.setText(_translate("Form", "Hasil"))
@@ -93,8 +100,12 @@ class Ui_Form(object):
         except ValueError:
             self.label.setText("Input tidak valid!")
 
+    def refresh(self):
+        self.lineEdit.clear()
+        self.lineEdit_2.clear()
+        self.label.setText("Hasil")
+
 if __name__ == "__main__":
-    import sys
     app = QtWidgets.QApplication(sys.argv)
     Form = QtWidgets.QWidget()
     ui = Ui_Form()
