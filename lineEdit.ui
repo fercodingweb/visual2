@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>906</width>
+    <height>645</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>50</y>
+     <width>671</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ButtonSetText">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>120</y>
+     <width>101</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Button SetText</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ButtonClear">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>170</y>
+     <width>101</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Button Clear</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ButtonCopy">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>230</y>
+     <width>101</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Button Copy</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ButtonCut">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>280</y>
+     <width>101</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Button Cut</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ButtonPaste">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>120</y>
+     <width>111</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Button Paste</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ButtonRedo">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>180</y>
+     <width>111</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Button Redo</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ButtonSelectAll">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>240</y>
+     <width>111</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Button SelectAll</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ButtonUndo">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>280</y>
+     <width>111</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Button Undo</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
